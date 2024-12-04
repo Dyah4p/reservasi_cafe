@@ -1,0 +1,88 @@
+/* CSS untuk halaman Products */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8B4513; /* Warna background coklat */
+    color: #f5f2f2;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Warna hitam transparan seperti di About */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%; /* Lebar penuh untuk navbar */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Lebar penuh untuk menu */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.products-container {
+    padding: 50px;
+    text-align: center;
+    background-color: #462b08; /* Warna background serasi */
+    margin-top: 60px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row; /* Mengatur tampilan menjadi menyamping */
+    flex-wrap: wrap; /* Membungkus baris jika terlalu panjang */
+    justify-content: center;
+}
+
+.product {
+    background: #9c7804;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 200px; /* Mengatur lebar produk */
+    overflow: hidden;
+    text-align: left;
+}
+
+.product img {
+    width: 100%;  /* Lebar gambar sesuai lebar box */
+    height: 120px; /* Tinggi gambar disesuaikan */
+    object-fit: cover;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.product p {
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 5px 0;
+}
